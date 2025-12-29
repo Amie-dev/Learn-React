@@ -1,0 +1,163 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+
+body {
+  background-color: black;
+  height: 100vh;
+  width: 100%;
+}
+
+.parent {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 20px;
+}
+
+.card {
+  height: 390px;
+  width: 310px;
+  background-color: aliceblue;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 25px;
+  gap: 10px;
+}
+
+.card {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Part1 */
+.card .part1 {
+  /* background-color: aquamarine; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+}
+
+.card .part1 .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* background-color: black; */
+}
+
+.card .part1 .header img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  border: 10px solid white;
+}
+
+.card .part1 .header button {
+  color: black;
+  font-size: 20px;
+  /* width: 80px;
+  height: 30px; */
+  background-color: white;
+  padding: 5px 10px;
+  border-radius: 10px;
+}
+
+/* Body */
+.card .part1 .body {
+  padding-top: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  /* background-color: rgb(50, 220, 220); */
+  overflow: hidden;
+  gap: 10px;
+}
+
+.body .companyName {
+  display: flex;
+  /* background-color: rgb(178, 178, 231); */
+  align-items: center;
+  /* padding-left: 4px; */
+  gap: 3px;
+  justify-content: start;
+}
+
+.body .companyName h3 {
+  /* width: 120px; */
+  /* text-align: center; */
+  font-size: 26px;
+  color: black;
+}
+
+.body .companyName p {
+  padding-top: 8px;
+  color: rgb(49, 46, 46);
+  font-size: 15px;
+}
+
+.body .role {
+  display: flex;
+  /* background-color: blue; */
+  align-items: center;
+  h4 {
+    font-size: 26px;
+    font-weight: bold; /* use font-weight instead of font: bold */
+    color: black;
+  }
+}
+
+.body .types {
+  display: flex;
+  /* background-color: rgb(134, 134, 239); */
+  align-items: center;
+  text-align: center;
+  padding: 0px 0px;
+  gap: 20px;
+}
+
+.body .types .btn1,
+.body .types .btn2 {
+  padding: 4px 6px;
+  background-color: #c9c6c6;
+  color: black;
+  font-size: 17px;
+  border: none;
+  border-radius: 7px;
+}
+
+/* Part2 */
+.card .part2 {
+  /* background-color: white; */
+
+  border-top: 2px solid rgb(197, 196, 195);
+  padding: 10px 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card .part2 .hour h4 {
+  color: black;
+  font-size: 25px;
+}
+.card .part2 .hour p {
+  color: #9a9797;
+  font-size: 17px;
+}
+
+.card .part2 .apply {
+  background-color: black;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 30px;
+}
+
+.card .part2 .apply:hover {
+  background-color: #333;
+  cursor: pointer;
+}
