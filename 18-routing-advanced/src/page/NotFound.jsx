@@ -1,0 +1,10 @@
+import React from 'react'
+
+function NotFound() {
+  return (
+    <div
+    className='flex items-center justify-center w-full h-full'><h1>NotFound</h1></div>
+  )
+}
+
+export default NotFound
